@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Petemoss&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(250, 250, 250) url(http://lorempixel.com/1920/1080/nature/);
+  font-family: "Inria Serif", Helvetica, Arial, sans-serif !important;
+}
+
+a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+/*======================================================
+                            Hero - Start
+    ======================================================*/
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70dvh;
+  padding: 20px;
+  background-image: url(../Images/contact.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-repeat: no-repeat;
+}
+.section::before {
+  content: "";
+  background-color: rgba(29, 60, 104, 0.7);
+  width: 100%;
+  height: 70dvh;
+  position: absolute;
+}
+.text-content {
+  text-align: center;
+  margin-bottom: 20px;
+  z-index: 3;
+}
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  z-index: 3;
+}
+.description {
+  font-size: 18px;
+  margin: 20px 0;
+  z-index: 3;
+}
+.image-container {
+  width: 100%;
+  max-width: 800px;
+  z-index: 3;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .section {
+    flex-direction: row;
+    text-align: left;
+  }
+  .text-content {
+    max-width: 50%;
+    margin-bottom: 0;
+    padding-right: 20px;
+  }
+  .title {
+    font-size: 48px;
+  }
+  .image-container {
+    max-width: 50%;
+  }
+}
+/*======================================================
+                            Hero - end
+    ======================================================*/
+
+/*======================================================
+                            c-prj-sec - start
+    ======================================================*/
+
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.contact-info i {
+  font-size: 2rem;
+  color: #1D3C68;
+}
+.contact-info h5 {
+  color: #1D3C68;
+  font-weight: bold;
+}
+.contact-info p {
+  color: #6c757d;
+}
+.btn-send {
+  background-color: #1D3C68;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+input{
+    background: #F2F2F2 !important;
+}
+textarea{
+    background: #F2F2F2 !important;
+
+}
+.ancient{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 2rem;
+}
+
+@media (max-width:768px) {
+    .f-cont{
+        margin-top: 1rem !important;
+    }
+}
+/*======================================================
+                            c-prj-sec - end
+    ======================================================*/
+
+/*======================================================
+                           map - start
+    ======================================================*/
+
+.map{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0rem;
+}
+
+.map iframe{
+   border-radius: 20px;
+}
+
+/*======================================================
+                           map - end
+    ======================================================*/
+
+
